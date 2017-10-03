@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<center><h1>DIWALI</h1></center>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").on({
+        mouseenter: function(){
+            $(this).css("background-color", "lightgray");
+        },  
+        mouseleave: function(){
+            $(this).css("background-color", "lightblue");
+        }, 
+        click: function(){
+            $(this).css("background-color", "yellow");
+        }  
+    });
+    $("#flip").click(function(){
+    	$("#panel").slideToggle(1000); 
+});
+});
+</script>
+</head>
+<style> 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: pink;
+    border: solid 1px blue;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+<body>
+
+<center>
+ <img src="gani.jpg"; name="logo" width: 90px; height:90px; float:right>
+<h3><p>""This diwali brings you all colorfull and enjoyment in your life same as the color changes now""</p></h3>
+</center>
+
+<div id="flip">Click me to see the "" Diwali Wishes""</div>
+<h1><div id="panel">""""HAPPY DIWALI!!!!!!""</div></h1>
+
+
+
+</body>
+</html>
+
+
+	

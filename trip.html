@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<center><h1>Trip to your favorite place</h1></center>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("button").click(function(){
+        var div = $("div");  
+        div.animate({left: '400px'}, "slow");
+        div.animate({fontSize: '3em'}, "slow");
+    });
+});
+</script> 
+</head>
+<body>
+<div style="background:#98bf21;height:100px;width:250px;position:absolute;">HELLO PaRIss!!!!!!</div>
+<p><h2>Make your trip special!</h2></p>
+<img src="eiffel.jpg" name="logo" height="400px" width="400px">
+<br><button>Start Animation</button>
+</body>
+</html>

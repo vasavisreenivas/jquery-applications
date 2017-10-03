@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	
+<script> 
+$(document).ready(function(){
+    $("button").click(function(){
+        var div = $("div");
+        div.animate({height: '600px', opacity: '0.9'}, "slow");
+        div.animate({width: '700px', opacity: '0.2'}, "slow");
+        div.animate({height: '200px', opacity: '0.9'}, "slow");
+        div.animate({width: '300px', opacity: '0.4s'}, "slow");
+        div.animate({fontSize: '3em'}, "slow");
+    });
+    
+});
+</script> 
+</head>
+<body>
+<center>
+
+<button>Start Animation</button>
+
+<p>You can see the animations below clearly how the jquery workss</p>
+
+<h1><div style="background:#98bf21;height:100px;width:100px;position:absolute;">vasavi</div></h1>
+
+</center>
+
+
+</body>
+</html>
